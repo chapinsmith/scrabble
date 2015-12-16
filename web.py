@@ -17,6 +17,9 @@ def index(racktext):
 			valid_words.append([score, word])
 
 	valid_words.sort()
+
+	valid_words.reverse()
+	
 	for play in valid_words:
 		score = play [0]
 		word = play [1]
